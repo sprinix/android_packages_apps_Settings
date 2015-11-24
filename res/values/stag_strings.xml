@@ -57,4 +57,9 @@
 
     <string name="app_package_name_title">Package</string>
     <string name="app_version_title">Version</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset stats</string>
+    <string name="battery_stats_message">Battery history stats are going to be reset</string>
+    <string name="ok_string">Ok</string>
 </resources>
