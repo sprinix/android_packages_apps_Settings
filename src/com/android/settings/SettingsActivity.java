@@ -152,6 +152,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
 
+    private static final String SUBSTRATUM_FRAGMENT = "com.android.settings.Substratum";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -580,7 +582,17 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+
         Log.d(LOG_TAG, "Switching to fragment " + fragmentName);
+
+        if (SUBSTRATUM_FRAGMENT.equals(fragmentName)) {
+            Intent subIntent = new Intent();
+            subIntent.setClassName("projekt.substratum", "projekt.substratum.LaunchActivity");
+            startActivity(subIntent);
+            finish();
+            return null;
+        }
+
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -725,7 +737,17 @@ public class SettingsActivity extends SettingsDrawerActivity
                 !aboutPhoneV2Enabled, isAdmin)
                 || somethingChanged;
 
-        if (UserHandle.MU_ENABLED && !isAdmin) {
+        // Substratum
+        boolean subSupported = false;
+        try {
+            subSupported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.SubstratumActivity.class.getName().toString()),
+                subSupported, isAdmin, pm);
+
+ 	 if (UserHandle.MU_ENABLED && !isAdmin) {
 
             // When on restricted users, disable all extra categories (but only the settings ones).
             final List<DashboardCategory> categories = mDashboardFeatureProvider.getAllCategories();
