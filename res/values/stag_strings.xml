@@ -70,10 +70,16 @@
     <string name="value_equals_default">def</string>
     <string name="show_light_on_zen_title">Blink during Do Not Disturb</string>
 
-
     <!-- Selinux Status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- SystemUI theme -->
+    <string name="theme_category_title">System theme</string>
+    <string name="systemui_theme_style_title">SystemUI theme</string>
+    <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
+    <string name="systemui_theme_style_light">Light</string>
+    <string name="systemui_theme_style_dark">Dark</string>
 </resources>
