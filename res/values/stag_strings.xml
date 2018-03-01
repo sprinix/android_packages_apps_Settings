@@ -173,4 +173,7 @@
     <string name="qstile_attemptmountain">An attempt of a mountain</string>
     <string name="qstile_squaremedo">The Squaremedo</string>
 
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
 </resources>
