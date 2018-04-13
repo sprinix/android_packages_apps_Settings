@@ -174,6 +174,7 @@
     <string name="qstile_squaremedo">The Squaremedo</string>
 
     <!-- Font picker -->
-    <string name="font_picker_title">Font</string>
+    <string name="font_picker_title">Font Manager</string>
+    <string name="font_picker_progress">Applying your desired font\u2026</string>
 
 </resources>
