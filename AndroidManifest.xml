@@ -3345,9 +3345,7 @@
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <!-- This is the longest AndroidManifest.xml ever. -->
-
-        <activity android:name=".Settings$HornsActivity"
+       <activity android:name=".Settings$HornsActivity"
                   android:label="@string/horns_settings_title"
                   android:icon="@drawable/ic_settings_horns">
             <intent-filter android:priority="-1">
@@ -3361,6 +3359,19 @@
                        android:resource="@string/horns_settings_summary"/>
         </activity>
 
-
+        <!-- Heads up settings activity. -->
+        <activity android:name="Settings$HeadsUpSettingsActivity"
+                android:label="@string/heads_up_notifications"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.stag.settings.fragments.HeadsUpSettings" />
+            <meta-data android:name="com.android.horns.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+        <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>

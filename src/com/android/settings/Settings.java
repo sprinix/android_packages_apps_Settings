@@ -166,5 +166,6 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class HornsActivity extends SettingsActivity {}
+    public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
 
 }
