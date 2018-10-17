@@ -157,4 +157,11 @@
     <string name="ambient_play_history_menu_add_to_home">Add to Home Screen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Are you sure?</string>
 
+    <!-- QS tile styles -->
+    <string name="qs_tile_style_title">QS tile style</string>
+    <string name="qs_tile_style_default">Default</string>
+    <string name="qs_tile_style_circle_trim">Circle with trim</string>
+    <string name="qs_tile_style_two_tone_circle">Two-toned circle with trim</string>
+    <string name="qs_tile_style_squircle_trim">Squircle with trim</string>
+
 </resources>
