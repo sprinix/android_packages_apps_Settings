@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	
     <!-- Venom Settings -->
-    <string name="stag_settings_title">StagOS</string>
-    <string name="stag_settings_summary">Where you can grow horns /nfeatures &amp; customization</string>
+    <string name="horns_settings_title">Horns</string>
+    <string name="horns_settings_summary">Where you can grow horns \nfeatures &amp; customization</string>
 
 </resources>
