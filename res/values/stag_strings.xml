@@ -138,4 +138,8 @@
 
     <!-- Density category -->
     <string name="density_category">Density options</string>
- </resources>
+
+    <!-- Font picker -->
+    <string name="font_picker_title">Font</string>
+
+</resources>

@@ -30,6 +30,7 @@ import com.android.settings.display.CameraGesturePreferenceController;
 import com.android.settings.display.ColorModePreferenceController;
 import com.android.settings.display.DarkUIPreferenceController;
 import com.android.settings.display.LiftToWakePreferenceController;
+import com.android.settings.display.FontPickerPreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
@@ -89,6 +90,7 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new CameraGesturePreferenceController(context));
         controllers.add(new DarkUIPreferenceController(context));
         controllers.add(new LiftToWakePreferenceController(context));
+        controllers.add(new FontPickerPreferenceController(context, lifecycle));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));
         controllers.add(new ScreenSaverPreferenceController(context));
