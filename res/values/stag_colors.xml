@@ -17,8 +17,5 @@
 <resources>
    <color name="accent_picker_white_accent">@android:color/white</color>
    <color name="accent_picker_dark_accent">@android:color/black</color>
-
-   <!-- Searchbar overlays -->
-   <color name="search_bar_background_color">@android:color/white</color>
 </resources>
 
