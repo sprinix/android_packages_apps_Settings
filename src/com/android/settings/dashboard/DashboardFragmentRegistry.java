@@ -40,6 +40,8 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
+import com.stag.horns.Horns;
+
 import java.util.Map;
 
 /**
@@ -95,6 +97,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_NOTIFICATIONS);
         PARENT_TO_CATEGORY_KEY_MAP.put(LockscreenDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_SECURITY_LOCKSCREEN);
+        PARENT_TO_CATEGORY_KEY_MAP.put(Horns.class.getName(),
+                CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
         PARENT_TO_CATEGORY_KEY_MAP.put(ZenModeSettings.class.getName(),
                 CategoryKey.CATEGORY_DO_NOT_DISTURB);
         PARENT_TO_CATEGORY_KEY_MAP.put(GestureSettings.class.getName(),
