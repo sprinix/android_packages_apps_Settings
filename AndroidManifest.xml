@@ -3374,8 +3374,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.stag.settings.fragments.HeadsUpSettings" />
-            <meta-data android:name="com.android.horns.PRIMARY_PROFILE_CONTROLLED"
+                android:value="com.stag.horns.fragments.HeadsUpSettings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
         <!-- This is the longest AndroidManifest.xml ever. -->
